@@ -1,0 +1,254 @@
+{
+  "kitchen": {
+    "alt": "조리용 냄비와 스토브, 도마, 오크통을 나란히 놓은 모습",
+    "caption": "왼쪽부터 열원 위 조리용 냄비, 도마, 발효용 오크통입니다.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "kitchen-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "kitchen-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "kitchen-1600.webp"
+      }
+    ]
+  },
+  "plated-meals": {
+    "alt": "큰 접시에 진열한 햄버거, 미트볼 파스타와 과일 샐러드",
+    "caption": "음식은 접시에 담아 식탁 위 소품으로도 즐길 수 있어요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "plated-meals-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "plated-meals-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "plated-meals-1600.webp"
+      }
+    ]
+  },
+  "crops": {
+    "alt": "다 자란 양배추, 토마토와 양파 작물을 나란히 놓은 모습",
+    "caption": "왼쪽부터 양배추, 토마토, 양파입니다. 토마토 아래에는 비옥한 경작지를 놓았습니다.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "crops-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "crops-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "crops-1600.webp"
+      }
+    ]
+  },
+  "rustic-crops": {
+    "alt": "커피, 목화와 피망이 다 자란 모습",
+    "caption": "커피 열매, 목화 솜, 피망이 열린 모습을 비교해 보세요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "rustic-crops-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "rustic-crops-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "rustic-crops-1600.webp"
+      }
+    ]
+  },
+  "rustic-desserts": {
+    "alt": "초콜릿 팬케이크와 커피·벚꽃 치즈케이크",
+    "caption": "농장에서 얻은 재료로 팬케이크와 다양한 치즈케이크를 만들어 보세요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "rustic-desserts-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "rustic-desserts-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "rustic-desserts-1600.webp"
+      }
+    ]
+  },
+  "fermentation": {
+    "alt": "발효용 오크통과 노란 치즈, 붉은 치즈 두 종류",
+    "caption": "오크통과 완성된 치즈 두 종류의 모습입니다. 발효 조건은 본문에서 확인하세요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "fermentation-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "fermentation-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "fermentation-1600.webp"
+      }
+    ]
+  },
+  "sculk-radio": {
+    "alt": "주크박스와 비명체, 소리 블록과 감지체, 자수정 블록과 감지체",
+    "caption": "왼쪽부터 송신 라디오, 스피커, 중계기입니다. 위아래 블록 조합이 중요해요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "sculk-radio-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "sculk-radio-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "sculk-radio-1600.webp"
+      }
+    ]
+  },
+  "golem-dj": {
+    "alt": "구리 상자와 주크박스 사이에서 음반을 든 구리 골렘",
+    "caption": "음반을 준비한 구리 상자와 주크박스를 골렘이 오갈 수 있게 배치하세요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "golem-dj-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "golem-dj-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "golem-dj-1600.webp"
+      }
+    ]
+  },
+  "hats-stands": {
+    "alt": "꿀벌 모자와 화가 베레모를 쓴 갑옷 거치대",
+    "caption": "꿀벌 모자와 화가 베레모의 외형을 갑옷 거치대로 비교한 예시입니다.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "hats-stands-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "hats-stands-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "hats-stands-1600.webp"
+      }
+    ]
+  },
+  "paintings": {
+    "alt": "Portfolio의 복어 그림과 작은 기본 그림을 건 흰 벽",
+    "caption": "큰 복어 그림은 Portfolio의 추가 작품, 오른쪽은 기본 그림입니다.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "paintings-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "paintings-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "paintings-1600.webp"
+      }
+    ]
+  },
+  "trade-shop": {
+    "alt": "상자 위에 설치한 아직 설정하지 않은 거래 블록",
+    "caption": "재고 상자 위에 거래 블록을 붙인 모습입니다. 상품과 가격을 설정하면 거래를 시작할 수 있어요.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "trade-shop-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "trade-shop-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "trade-shop-1600.webp"
+      }
+    ]
+  },
+  "recipe-search": {
+    "alt": "Polydex 아이템 사전의 상자형 목록 화면",
+    "caption": "Polydex의 아이템 목록입니다. 왼쪽 클릭은 만드는 법, 오른쪽 클릭은 쓰임새를 보여 줍니다.",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "recipe-search-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "recipe-search-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "recipe-search-1600.webp"
+      }
+    ]
+  }
+}

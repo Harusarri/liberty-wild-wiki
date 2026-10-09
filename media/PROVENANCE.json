@@ -1,0 +1,122 @@
+[
+  {
+    "photo": "kitchen",
+    "original_sha256": "1519f5b43fa4bc0159154b427263f304381289a69dd1e886f28a5000055ab2b2",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "plated-meals",
+    "original_sha256": "66b7557f86909b04eab0ceaf582f0f72c8e610012e63e473a6eff8ded1c7a765",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "crops",
+    "original_sha256": "e751c2ba150d2d29ac2439fbe103c375029fb4c17497523141555f220ac59e2c",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "rustic-crops",
+    "original_sha256": "4976f468deb97e2b8fb2ce72a9c3fc843fc68d70c5739c3505557f042a574a29",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "rustic-desserts",
+    "original_sha256": "0de92f40bd7be983746aaaa05fcdf462b33f920080696fecc3718b15e0c1f491",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "fermentation",
+    "original_sha256": "6a2e6b95a0ab0ea373849a6474e34e2fd3a30cc0a17136f5d47c184b5f2b24c5",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "sculk-radio",
+    "original_sha256": "3bcf4a590502c84398c7d90533ea8a430dfb765016c67a6e40e785b614c370e9",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "golem-dj",
+    "original_sha256": "3beb6b9a2f03a476011c3110ecba265b7d04f21550ff59f21f2e998d11fb81ad",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "hats-stands",
+    "original_sha256": "31f160ad2da4341e4c05ce39e054d2cc42f963dfc5089f5ccf9da571b826ec8c",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "paintings",
+    "original_sha256": "1204e48102b4f25efe61fbe594844742273dbe8a8cf3fdaa7c3ad3fbdc9cca3e",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "trade-shop",
+    "original_sha256": "1b06594e1f5f447cb748112ced6e23ddcb04dfa55e883adfc11fe9e7c4d2885f",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  },
+  {
+    "photo": "recipe-search",
+    "original_sha256": "83ac799f14be7f5205bdb81f1dc554668665a957612f1d60cd4ff05ab36e1560",
+    "scene": "local void world",
+    "time_ticks": 1000,
+    "weather": "clear",
+    "shader": "Complementary Reimagined r5.8.1",
+    "minecraft": "26.3",
+    "capture": "Prism Launcher / Minecraft F2"
+  }
+]

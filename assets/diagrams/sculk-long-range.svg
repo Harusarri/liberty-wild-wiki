@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" role="img" aria-labelledby="title desc">
+<title id="title">스컬크 라디오 장거리 연결</title><desc id="desc">각 지역의 중계기와 장거리 안테나는 X, Z를 같게 놓고 위쪽 감지체의 높이를 17블록 이상 떨어뜨립니다. 양쪽 안테나는 같은 자수정 조각으로 주파수를 맞춥니다. 라디오와 스피커는 각 중계기의 16블록 안에 놓습니다.</desc>
+<rect width="680" height="680" rx="16" fill="#fafaf8"/>
+<g font-family="system-ui,sans-serif" text-anchor="middle" fill="#313b35">
+<text x="165" y="45" font-size="28" font-weight="700">음악을 보내는 쪽</text><text x="515" y="45" font-size="28" font-weight="700">음악을 듣는 쪽</text>
+<path d="M165 130V103H515V130" fill="none" stroke="#287652" stroke-width="4" stroke-dasharray="7 7"/><text x="340" y="87" font-size="25" fill="#216849">같은 주파수로 연결</text>
+<g font-size="23"><rect x="30" y="130" width="270" height="54" rx="6" fill="#173d43"/><rect x="30" y="184" width="270" height="43" rx="6" fill="#d8cbed"/><text x="165" y="164" fill="white">조율된 스컬크 감지체</text><text x="165" y="213">자수정 블록</text>
+<rect x="380" y="130" width="270" height="54" rx="6" fill="#173d43"/><rect x="380" y="184" width="270" height="43" rx="6" fill="#d8cbed"/><text x="515" y="164" fill="white">조율된 스컬크 감지체</text><text x="515" y="213">자수정 블록</text></g>
+<g stroke="#9da99d" stroke-width="3" stroke-dasharray="5 6"><path d="M165 240V425M515 240V425"/></g>
+<g font-size="24"><rect x="36" y="276" width="258" height="100" rx="10" fill="#f0f2e9"/><text x="165" y="307">X·Z는 같게</text><text x="165" y="345" font-size="29" font-weight="700">높이 차이 17+</text><rect x="386" y="276" width="258" height="100" rx="10" fill="#f0f2e9"/><text x="515" y="307">X·Z는 같게</text><text x="515" y="345" font-size="29" font-weight="700">높이 차이 17+</text></g>
+<g font-size="23"><rect x="30" y="434" width="270" height="54" rx="6" fill="#173d43"/><rect x="30" y="488" width="270" height="43" rx="6" fill="#d8cbed"/><text x="165" y="468" fill="white">스컬크 감지체</text><text x="165" y="517">자수정 블록</text><rect x="380" y="434" width="270" height="54" rx="6" fill="#173d43"/><rect x="380" y="488" width="270" height="43" rx="6" fill="#d8cbed"/><text x="515" y="468" fill="white">스컬크 감지체</text><text x="515" y="517">자수정 블록</text></g>
+<g font-size="24"><path d="M165 540V572M515 540V572" stroke="#287652" stroke-width="3"/><text x="165" y="600" font-weight="700">라디오 ↔ 중계기</text><text x="515" y="600" font-weight="700">중계기 ↔ 스피커</text><text x="165" y="638">16블록 이내</text><text x="515" y="638">16블록 이내</text></g>
+</g></svg>

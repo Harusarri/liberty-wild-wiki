@@ -1142,5 +1142,119 @@
         "file": "advancements-1600.webp"
       }
     ]
+  },
+  "forum-prism-pack": {
+    "alt": "Prism Launcher의 Modrinth 모드팩 선택 화면",
+    "caption": "자료실에 게시된 2026.02 화면입니다. 현재 버전에서는 일부 모양과 위치가 다를 수 있습니다.",
+    "kind": "community",
+    "width": 991,
+    "height": 778,
+    "focus": [
+      25,
+      130,
+      917,
+      552
+    ],
+    "source_url": "https://discord.com/channels/1399377654712373248/1475437024403263539/1475511040568459348",
+    "variants": [
+      {
+        "file": "forum-prism-pack-640.webp",
+        "width": 640,
+        "height": 502
+      },
+      {
+        "file": "forum-prism-pack-991.webp",
+        "width": 991,
+        "height": 778
+      }
+    ]
+  },
+  "forum-prism-edit": {
+    "alt": "Prism Launcher에서 인스턴스를 선택한 뒤 편집 버튼을 누르는 화면",
+    "caption": "자료실에 게시된 2026.03 화면입니다. 현재 버전에서는 일부 모양과 위치가 다를 수 있습니다.",
+    "kind": "community",
+    "width": 904,
+    "height": 618,
+    "focus": [
+      775,
+      230,
+      125,
+      54
+    ],
+    "source_url": "https://discord.com/channels/1399377654712373248/1475437024403263539/1481962733711921253",
+    "variants": [
+      {
+        "file": "forum-prism-edit-640.webp",
+        "width": 640,
+        "height": 438
+      },
+      {
+        "file": "forum-prism-edit-904.webp",
+        "width": 904,
+        "height": 618
+      }
+    ]
+  },
+  "forum-litematica-load": {
+    "alt": "Litematica의 배치 생성 체크 상자와 스케마틱 불러오기 버튼",
+    "caption": "자료실에 게시된 2026.03 화면입니다. 현재 버전에서는 일부 모양과 위치가 다를 수 있습니다.",
+    "kind": "community",
+    "width": 1920,
+    "height": 1080,
+    "focus": [
+      20,
+      988,
+      270,
+      90
+    ],
+    "source_url": "https://discord.com/channels/1399377654712373248/1475522809139695747/1487492507951566869",
+    "variants": [
+      {
+        "file": "forum-litematica-load-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "forum-litematica-load-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "forum-litematica-load-1600.webp",
+        "width": 1600,
+        "height": 900
+      }
+    ]
+  },
+  "forum-litematica-materials": {
+    "alt": "Litematica 배치 설정에서 재료 목록을 여는 버튼",
+    "caption": "자료실에 게시된 2026.03 화면입니다. 현재 버전에서는 일부 모양과 위치가 다를 수 있습니다.",
+    "kind": "community",
+    "width": 1920,
+    "height": 1080,
+    "focus": [
+      1650,
+      490,
+      265,
+      164
+    ],
+    "source_url": "https://discord.com/channels/1399377654712373248/1475522809139695747/1487495400582549536",
+    "variants": [
+      {
+        "file": "forum-litematica-materials-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "forum-litematica-materials-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "forum-litematica-materials-1600.webp",
+        "width": 1600,
+        "height": 900
+      }
+    ]
   }
 }

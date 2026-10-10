@@ -107,6 +107,10 @@
       {
         "title": "YAWP 공식 문서 · 기본 보호 기능",
         "url": "https://z0rdak.github.io/yawp-docs/"
+      },
+      {
+        "title": "자료실 · BlueMap 영역보호 설정방법 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1537298147305455656"
       }
     ],
     "body_markdown": "**Esc → 구역 관리 → 구역 관리 열기**로 들어가세요. 생성한 뒤에는 보호 규칙까지 확인합니다.",
@@ -126,6 +130,10 @@
       {
         "title": "단축키와 다른 진입 방법",
         "body_markdown": "기본 **G 키**의 빠른 행동 메뉴에서도 구역 관리를 열 수 있습니다. 메뉴가 보이지 않으면 채팅에 `/구역`을 입력하세요."
+      },
+      {
+        "title": "웹 지도에서도 관리할 수 있나요?",
+        "body_markdown": "[웹 지도](/guide/world-map/)에서도 Discord 로그인과 마인크래프트 계정 연결 후 내 구역을 관리할 수 있습니다. PC의 구역 생성 툴은 **왼쪽 버튼 드래그**로 범위를 고릅니다. 자세한 버튼 순서는 [웹 지도 안내](/guide/world-map/)에서 확인하세요."
       }
     ],
     "visual_steps": [

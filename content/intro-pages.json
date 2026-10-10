@@ -42,6 +42,10 @@
       {
         "title": "리소스팩과 클라이언트 모드는 달라요",
         "body_markdown": "서버 리소스팩을 받아도 음성 대화나 영상 모드가 자동 설치되지는 않습니다. 음성은 Simple Voice Chat, 영상은 DreamDisplays 클라이언트 모드가 필요합니다. 각 안내에서 준비물을 확인해 주세요."
+      },
+      {
+        "title": "모드 설치가 처음이라면",
+        "body_markdown": "[Prism Launcher에서 모드 설치하기](/guide/client-setup/)를 따라 해 보세요. 자료실의 설치 화면과 현재 공식 안내를 함께 정리했습니다. [자료실의 편리한 웹 도구](/guide/community-tools/)도 사용할 수 있습니다."
       }
     ]
   },

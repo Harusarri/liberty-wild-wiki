@@ -56,6 +56,7 @@ for f in sorted((ROOT / 'vendor/lucide/icons').glob('*.svg')):
     symbols.append(f'<symbol id="{f.stem}" viewBox="0 0 24 24">{body}</symbol>')
 ICONS = asset('icons.svg', '<svg xmlns="http://www.w3.org/2000/svg">' + ''.join(symbols) + '</svg>')
 ITEM_ICONS = {f.name:asset('item-'+f.name, f.read_bytes()) for f in sorted((ROOT/'assets/item-icons').glob('*.png'))}
+DIAGRAMS = {f.name:asset(f.name, f.read_bytes()) for f in sorted((ROOT/'assets/diagrams').glob('*.svg'))}
 FAVICON = ITEM_ICONS['minecraft-book.png']
 ITEM_MAP = {
  'book-open':'minecraft-book.png', 'compass':'minecraft-compass_16.png',
@@ -152,9 +153,11 @@ def md(text,base='../../'):
 
 def photo_figure(name,base,markers=None,caption=None):
     photo=PHOTOS[name];variants=sorted(photo['variants'],key=lambda v:v['width']);full=base+variants[-1]['asset']
-    x,y,w,h=photo.get('focus',[0,0,1600,900])
-    crop=(x,y,w,h)!=(0,0,1600,900)
-    imgstyle=f'width:{1600/w*100:.5f}%;max-width:none;left:{-x/w*100:.5f}%;top:{-y/h*100:.5f}%;' if crop else 'width:100%;left:0;top:0;'
+    iw,ih=photo.get('width',1600),photo.get('height',900)
+    x,y,w,h=photo.get('focus',[0,0,iw,ih])
+    assert w>0 and h>0 and x>=0 and y>=0 and x+w<=iw and y+h<=ih, name
+    crop=(x,y,w,h)!=(0,0,iw,ih)
+    imgstyle=f'width:{iw/w*100:.5f}%;max-width:none;left:{-x/w*100:.5f}%;top:{-y/h*100:.5f}%;' if crop else 'width:100%;left:0;top:0;'
     srcset='' if crop else ' srcset="'+', '.join(f'{base}{v["asset"]} {v["width"]}w' for v in variants)+'" sizes="(max-width:760px) calc(100vw - 44px), 760px"'
     points='';legend=''
     for i,m in enumerate(markers or [],1):
@@ -163,8 +166,12 @@ def photo_figure(name,base,markers=None,caption=None):
         points+=f'<span class="photo-marker" style="left:{px:.2f}%;top:{py:.2f}%" aria-hidden="true">{i}</span>'
         legend+=f'<span><b>{i}</b> {E(m["label"])}</span>'
     legends=f'<div class="photo-legend">{legend}</div>' if legend else ''
-    source_note='공개 웹 지도 화면' if photo.get('kind')=='website' else '실제 게임 화면'
-    return f'<figure class="guide-photo"><a class="photo-frame" style="aspect-ratio:{w}/{h}" href="{full}" target="_blank" rel="noopener" aria-label="{E(photo["alt"])} — 사진 크게 보기"><img style="{imgstyle}" src="{full}"{srcset} width="1600" height="900" alt="{E(photo["alt"])}" loading="lazy" decoding="async">{points}</a>{legends}<figcaption>{E(caption or photo["caption"])}<small>{source_note} · 눌러서 크게 보기</small></figcaption></figure>'
+    source_note={'website':'공개 웹 지도 화면','community':'자료실 원문 화면'}.get(photo.get('kind'),'실제 게임 화면')
+    credit=f' · <a href="{E(photo["source_url"])}" target="_blank" rel="noopener">포럼 원문</a>' if photo.get('source_url') else ''
+    return f'<figure class="guide-photo"><a class="photo-frame" style="aspect-ratio:{w}/{h}" href="{full}" target="_blank" rel="noopener" aria-label="{E(photo["alt"])} — 사진 크게 보기"><img style="{imgstyle}" src="{full}"{srcset} width="{iw}" height="{ih}" alt="{E(photo["alt"])}" loading="lazy" decoding="async">{points}</a>{legends}<figcaption>{E(caption or photo["caption"])}<small>{source_note} · 눌러서 크게 보기{credit}</small></figcaption></figure>'
+
+def diagram_figure(name,base):
+    return f'<figure class="guide-diagram"><img src="{base}{DIAGRAMS[name]}" alt="중계기 바로 위에 장거리 안테나를 설치하고 양쪽 안테나의 주파수를 맞추는 배치도. 감지체 사이 높이 차이는 17블록 이상이며 X와 Z가 같아야 합니다." width="680" height="680" loading="lazy"><figcaption>장거리 연결 배치도 · 두 장치의 위쪽 감지체를 기준으로 높이를 셉니다.</figcaption></figure>'
 
 
 for p in pages:
@@ -173,7 +180,7 @@ for p in pages:
     body = re.sub(r'href="/(?!/)', f'href="{base}', body)
     related = [x for x in pages if x['category'] == p['category'] and x['slug'] != p['slug']][:3]
     references = ''.join(f'<li><a href="{E(s["url"])}" target="_blank" rel="noopener">{E(s["title"])}</a></li>' for s in p.get('sources',[]))
-    sources = f'<details class="sources"><summary>이 문서의 참고 자료</summary><ul>{references}</ul><p>안내는 운영 서버의 설치 버전과 설정을 함께 확인해 작성했습니다. 제작자 문서와 차이가 있을 수 있습니다.</p></details>' if references else ''
+    sources = f'<details class="sources"><summary>이 문서의 참고 자료</summary><ul>{references}</ul><p>기능별로 운영 설정, 제작자 문서와 서버 자료실을 확인했습니다. 버전이 다른 자료는 현재 화면과 차이가 있을 수 있습니다.</p></details>' if references else ''
     related_html = '<section class="related"><h2>이어서 읽어 보세요</h2>' + ''.join(f'<a href="../{x["slug"]}/">{E(x["title"])} →</a>' for x in related) + '</section>' if related else ''
     photos_html = ''.join(photo_figure(name,base) for name in p.get('photos',[]))
     steps_html=''
@@ -186,7 +193,8 @@ for p in pages:
         steps_html+=f'<section class="visual-step" id="step-{n}"><h2><span class="step-number">{n}</span>{E(title)}</h2><div class="step-instruction">{illustration}<div>{md(step["caption"],base)}</div></div>{picture}</section>'
     details_html=''
     for detail in p.get('details',[]):
-        details_html+=f'<details class="guide-detail"><summary>{E(detail["title"])}</summary><div>{md(detail["body_markdown"],base)}</div></details>'
+        diagram=diagram_figure(detail['diagram'],base) if detail.get('diagram') else ''
+        details_html+=f'<details class="guide-detail"><summary>{E(detail["title"])}</summary><div>{diagram}{md(detail["body_markdown"],base)}</div></details>'
     visual_icon=p.get('icon_asset') or ITEM_MAP[CAT[p['category']][2]]
     header_icon=f'<img class="article-item item-icon" src="{base}{ITEM_ICONS[visual_icon]}" alt="" width="48" height="48">'
     content = f'''<div class="article-layout"><article><header class="article-header">{header_icon}<div class="eyebrow">{E(p['category'])}</div><h1>{E(p['title'])}</h1><p class="lead">{E(p['summary'])}</p><div class="article-meta"><span>{'사진과 순서로 보기' if p.get('visual_steps') else '생활 안내'}</span><span>2026.10.10 확인</span></div></header>{photos_html}<div class="article-body">{body}{steps_html}{details_html}</div>{sources}{related_html}</article><nav class="toc" aria-label="이 문서의 목차"><div class="toc-title">이 페이지에서</div>{''.join(f'<a href="#{a}">{E(t)}</a>' for a,t in toc)}</nav></div>'''
@@ -200,7 +208,7 @@ for i,(name,label,*_) in enumerate(CATEGORIES,1):
             catalog += f'<a class="catalog-row" href="../guide/{p["slug"]}/"><strong>{E(p["title"])}</strong><p>{E(p["summary"])}</p></a>'
     catalog += '</section>'
 write('guides/index.html',layout('전체 문서','주제별로 찾아보는 리버티 와일드의 생활 안내.','guides/',catalog,'guides'))
-about = '''<article class="article-body"><div class="eyebrow">위키 안내</div><h1>위키 안내와 출처</h1><p>리버티 와일드에서 처음 만나는 기능을 쉽게 익히도록 만든 안내서입니다. 2026년 10월 10일의 운영 서버 설치 파일, 제작법, 설정과 일반 사용자 권한을 확인했습니다.</p><h2>무엇을 담았나요?</h2><p>요리·농사·생활·보호·거래·꾸미기·소통처럼 플레이어가 직접 사용하는 기능을 담았습니다. 관리 도구와 성능 개선 모드는 사용법 목차에서 제외했습니다. 호환 패치는 관련 콘텐츠 설명에 반영했습니다.</p><p>문서는 설치 파일과 설정을 분석해 작성했습니다. 모든 기능을 운영 서버에서 직접 플레이하며 시험한 것은 아닙니다. 서버 업데이트와 구역별 설정에 따라 동작이 달라질 수 있으며, 제작법은 게임 안의 사전에서도 확인해 주세요.</p><h2>가볍고 빠르게 읽기</h2><p>문서는 미리 만들어진 HTML로 제공됩니다. 외부 글꼴을 내려받지 않으며, 한번 방문한 문서와 화면 파일은 브라우저에 저장되어 다시 읽을 때 사용할 수 있습니다. 오프라인에서는 이미 읽은 문서만 볼 수 있습니다.</p><h2>디자인과 오픈 소스</h2><ul><li>밝은 색상과 글꼴 구성: <a href="https://github.com/diegoeis/obsidianotion">Obsidianotion</a>을 웹에 맞게 수정했습니다. Unlicense.</li><li>메뉴의 아이템 이미지: Minecraft 26.3과 Farmer’s Delight Refabricated의 실제 아이템 텍스처입니다. Minecraft 자산은 Mojang AB / Microsoft, Farmer’s Delight 자산은 해당 제작자의 권리이며 MIT 고지를 함께 보관합니다. <a href="../licenses/item-icons.json">아이템별 출처</a> · <a href="../licenses/FarmersDelight.txt">MIT 고지</a>. <a href="https://www.minecraft.net/en-us/usage-guidelines">Minecraft 사용 지침</a>.</li><li>검색·화살표 등 조작 아이콘: <a href="https://lucide.dev">Lucide</a>. ISC License.</li><li>문서 변환기: <a href="https://github.com/trentm/python-markdown2">python-markdown2</a> 2.5.3. MIT License.</li></ul><p>Minecraft 및 Notion의 공식 제품이나 제휴 사이트가 아닌 팬 안내서입니다. 각 모드와 데이터팩의 권리는 해당 제작자에게 있습니다. 개별 문서 하단에서 원본 자료를 확인할 수 있습니다.</p></article>'''
+about = '''<article class="article-body"><div class="eyebrow">위키 안내</div><h1>위키 안내와 출처</h1><p>리버티 와일드에서 처음 만나는 기능을 쉽게 익히도록 만든 안내서입니다. 2026년 10월 10일의 운영 서버 설치 파일, 제작법, 설정과 일반 사용자 권한을 확인했습니다.</p><h2>무엇을 담았나요?</h2><p>요리·농사·생활·보호·거래·꾸미기·소통처럼 플레이어가 직접 사용하는 기능을 담았습니다. 관리 도구와 성능 개선 모드는 사용법 목차에서 제외했습니다. 호환 패치는 관련 콘텐츠 설명에 반영했습니다.</p><p>문서는 설치 파일과 설정을 분석해 작성했습니다. 모든 기능을 운영 서버에서 직접 플레이하며 시험한 것은 아닙니다. 서버 업데이트와 구역별 설정에 따라 동작이 달라질 수 있으며, 제작법은 게임 안의 사전에서도 확인해 주세요.</p><h2>서버 자료실도 함께 참고합니다</h2><p>Discord 자료실의 사용 경험과 안내를 현재 설치 버전·공식 문서와 대조해 반영합니다. 문서 하단과 자료실 사진에는 원문 링크를 남기며, 원문을 열려면 Discord 로그인과 채널 접근 권한이 필요할 수 있습니다. 예전 사진은 게시 시점을 표시하여 새로 촬영한 공허 촬영장 사진과 구분합니다. 원문 대화나 개인 워프 좌표는 공개 위키에 옮기지 않습니다.</p><h2>가볍고 빠르게 읽기</h2><p>문서는 미리 만들어진 HTML로 제공됩니다. 외부 글꼴을 내려받지 않으며, 한번 방문한 문서와 화면 파일은 브라우저에 저장되어 다시 읽을 때 사용할 수 있습니다. 오프라인에서는 이미 읽은 문서만 볼 수 있습니다.</p><h2>디자인과 오픈 소스</h2><ul><li>밝은 색상과 글꼴 구성: <a href="https://github.com/diegoeis/obsidianotion">Obsidianotion</a>을 웹에 맞게 수정했습니다. Unlicense.</li><li>메뉴의 아이템 이미지: Minecraft 26.3과 Farmer’s Delight Refabricated의 실제 아이템 텍스처입니다. Minecraft 자산은 Mojang AB / Microsoft, Farmer’s Delight 자산은 해당 제작자의 권리이며 MIT 고지를 함께 보관합니다. <a href="../licenses/item-icons.json">아이템별 출처</a> · <a href="../licenses/FarmersDelight.txt">MIT 고지</a>. <a href="https://www.minecraft.net/en-us/usage-guidelines">Minecraft 사용 지침</a>.</li><li>검색·화살표 등 조작 아이콘: <a href="https://lucide.dev">Lucide</a>. ISC License.</li><li>문서 변환기: <a href="https://github.com/trentm/python-markdown2">python-markdown2</a> 2.5.3. MIT License.</li></ul><p>Minecraft 및 Notion의 공식 제품이나 제휴 사이트가 아닌 팬 안내서입니다. 각 모드와 데이터팩의 권리는 해당 제작자에게 있습니다. 개별 문서 하단에서 원본 자료를 확인할 수 있습니다.</p></article>'''
 write('licenses/item-icons.json',(ROOT/'assets/item-icons/manifest.json').read_text())
 write('licenses/FarmersDelight.txt',(ROOT/'assets/item-icons/LICENSE-FarmersDelight.txt').read_text())
 write('about/index.html',layout('위키 안내와 출처','위키의 범위, 확인 기준과 디자인 자산의 라이선스.','about/',about))

@@ -509,5 +509,37 @@
     "capture": "Prism Launcher / Minecraft F2",
     "presentation": "Unmodified screenshot; CSS focus and HTML click markers when specified",
     "player": "Local non-operator demonstration account"
+  },
+  {
+    "photo": "forum-prism-pack",
+    "original_sha256": "10717a9e4a794377d8810e6ebd20c4be463967efe184ab3654d5777f5c578631",
+    "capture": "Community forum attachment; original annotations retained",
+    "source": "https://discord.com/channels/1399377654712373248/1475437024403263539/1475511040568459348",
+    "published_at": "2026-02-23T15:14:05.741000+00:00",
+    "presentation": "WebP resize; CSS focus only; not a new studio capture"
+  },
+  {
+    "photo": "forum-prism-edit",
+    "original_sha256": "ed66a4716e8acda43b39f2331e9cc253cf88a0bc8da58800d6b171049a7e741a",
+    "capture": "Community forum attachment; original annotations retained",
+    "source": "https://discord.com/channels/1399377654712373248/1475437024403263539/1481962733711921253",
+    "published_at": "2026-03-13T10:30:49.253000+00:00",
+    "presentation": "WebP resize; CSS focus only; not a new studio capture"
+  },
+  {
+    "photo": "forum-litematica-load",
+    "original_sha256": "8550aa5d9a1815f5dbde314b7f92e5cc09607f134306f471b3de4783cc740e1a",
+    "capture": "Community forum attachment; original annotations retained",
+    "source": "https://discord.com/channels/1399377654712373248/1475522809139695747/1487492507951566869",
+    "published_at": "2026-03-28T16:44:10.170000+00:00",
+    "presentation": "WebP resize; CSS focus only; not a new studio capture"
+  },
+  {
+    "photo": "forum-litematica-materials",
+    "original_sha256": "45273e2d7258a14178f3e744e9867489f3a8b01d07028f30931baa3636bc782e",
+    "capture": "Community forum attachment; original annotations retained",
+    "source": "https://discord.com/channels/1399377654712373248/1475522809139695747/1487495400582549536",
+    "published_at": "2026-03-28T16:55:39.827000+00:00",
+    "presentation": "WebP resize; CSS focus only; not a new studio capture"
   }
 ]

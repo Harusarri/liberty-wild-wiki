@@ -1,0 +1,216 @@
+[
+  {
+    "slug": "client-setup",
+    "title": "Prism에서 모드 설치하기",
+    "category": "처음 오셨나요",
+    "summary": "인스턴스 만들기부터 필요한 클라이언트 모드 추가까지 버튼으로 따라 해요.",
+    "order": 2,
+    "mods": [],
+    "icon_asset": "minecraft-book.png",
+    "body_markdown": "음성 채팅·설계도 같은 기능은 **내 컴퓨터에도 모드가 필요합니다.** 포럼의 설치 화면을 참고하되 게임 버전은 지금 접속할 서버에 맞춰 주세요.",
+    "visual_steps": [
+      {
+        "title": "Prism 설치와 계정 연결",
+        "caption": "[Prism 공식 다운로드](https://prismlauncher.org/download/)에서 운영체제에 맞게 설치합니다. 실행 후 **계정 → Microsoft 계정 추가**로 Minecraft Java Edition을 가진 계정에 로그인하세요."
+      },
+      {
+        "title": "새 인스턴스 만들기",
+        "caption": "**인스턴스 추가 → Modrinth**에서 모드팩을 검색합니다. 자료실의 예시는 **Fabulously Optimized**입니다. 설치 목록의 순서는 바뀌므로 이름으로 찾으세요.",
+        "photo": "forum-prism-pack",
+        "markers": [
+          {
+            "x": 130,
+            "y": 520,
+            "label": "Modrinth"
+          },
+          {
+            "x": 405,
+            "y": 385,
+            "label": "모드팩 선택"
+          },
+          {
+            "x": 657,
+            "y": 644,
+            "label": "확인"
+          }
+        ]
+      },
+      {
+        "title": "서버에 맞는 버전 고르기",
+        "caption": "**선택된 버전**을 펼쳐 서버에 맞는 Minecraft 버전을 고른 뒤 **확인**을 누릅니다. 사진 속 옛 버전 숫자를 그대로 따라 고르지 마세요. 맞는 모드팩이 없으면 **사용자 정의 → 서버와 같은 Minecraft 버전 → Fabric**으로 인스턴스를 만듭니다."
+      },
+      {
+        "title": "편집에서 필요한 모드 추가",
+        "caption": "인스턴스를 선택하고 **편집 → 모드 → 모드 다운로드**로 들어갑니다. 원하는 모드를 찾고 다운로드 목록에 담은 뒤 **확인**을 누릅니다.",
+        "photo": "forum-prism-edit",
+        "markers": [
+          {
+            "x": 817,
+            "y": 247,
+            "label": "편집"
+          }
+        ]
+      },
+      {
+        "title": "실행하고 기능 확인",
+        "caption": "게임을 닫은 상태에서 설치를 마친 뒤 다시 실행하세요. 음성 채팅은 **V**, Litematica는 **M** 메뉴가 열리는지 확인합니다."
+      }
+    ],
+    "details": [
+      {
+        "title": "무엇을 설치해야 하나요?",
+        "body_markdown": "| 하고 싶은 일 | 내 컴퓨터에 필요한 것 |\n| --- | --- |\n| [음성 대화·커스텀 음반 듣기](/guide/voice-chat/) | Simple Voice Chat의 Fabric용 클라이언트 파일 |\n| [설계도 표시하기](/guide/litematica-basics/) | Litematica + MaLiLib |\n| [친구와 설계도 공유](/guide/shared-schematics/) | Litematica + MaLiLib + SyncmaticaR |\n| [게임 속 영상 보기](/guide/video-displays/) | DreamDisplays 클라이언트 모드 |\n\n모드는 **게임 버전과 모드 로더**를 맞춰 설치합니다. 이미 모드팩에 들어 있는 모드는 중복 설치하지 마세요. Sculk Radio와 AudioPlayer 자체는 서버에 준비되어 있으므로 클라이언트에 다시 넣을 필요가 없습니다."
+      },
+      {
+        "title": "Java 선택과 실행 오류",
+        "body_markdown": "Prism이 Java 설치를 제안하면 해당 게임 버전에 맞는 자동 선택을 사용하세요. 직접 확인할 때는 **설정 → Java**의 설치·다운로드 항목을 이용합니다.\n\n추가 설치 직후 실행이 안 되면 **편집 → 모드**에서 방금 추가한 항목을 잠시 끄고 버전과 필수 의존성을 확인하세요. [Prism Java 공식 안내](https://prismlauncher.org/wiki/getting-started/installing-java/)"
+      }
+    ],
+    "sources": [
+      {
+        "title": "자료실 · 최적화 모드팩 설치 화면 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1475437024403263539"
+      },
+      {
+        "title": "Prism 공식 모드 설치 안내",
+        "url": "https://prismlauncher.org/wiki/getting-started/download-mods/"
+      },
+      {
+        "title": "Prism 공식 모드팩 설치 안내",
+        "url": "https://prismlauncher.org/wiki/getting-started/download-modpacks/"
+      }
+    ]
+  },
+  {
+    "slug": "litematica-basics",
+    "title": "설계도 불러오기와 재료 목록",
+    "category": "건축과 꾸미기",
+    "summary": "설계도를 화면에 띄우고 필요한 재료를 확인하는 Litematica 첫걸음입니다.",
+    "order": 35,
+    "mods": [],
+    "icon_asset": "minecraft-writable_book.png",
+    "body_markdown": "**Litematica와 MaLiLib**를 먼저 설치하세요. 설계도는 따라 지을 위치를 보여 주는 안내선입니다. 야생에서 블록을 자동으로 지급하거나 건축물을 즉시 만들어 주지는 않습니다.",
+    "visual_steps": [
+      {
+        "title": "설계도 파일 넣기",
+        "caption": "Prism에서 사용할 인스턴스를 선택하고 **폴더 → Minecraft 폴더**를 엽니다. 그 안의 **schematics** 폴더에 `.litematic` 파일을 넣습니다. 폴더가 없으면 게임을 한 번 실행하거나 새 폴더를 만드세요."
+      },
+      {
+        "title": "M 메뉴에서 불러오기",
+        "caption": "게임에서 **M → 스케마틱 불러오기(Load Schematics)**를 엽니다. 파일을 고르고 **배치 생성(Create placement)**을 켠 뒤 **스케마틱 불러오기**를 누릅니다.",
+        "photo": "forum-litematica-load",
+        "markers": [
+          {
+            "x": 35,
+            "y": 1011,
+            "label": "배치 생성"
+          },
+          {
+            "x": 107,
+            "y": 1048,
+            "label": "불러오기"
+          }
+        ]
+      },
+      {
+        "title": "배치와 재료 목록 확인",
+        "caption": "**M → 스케마틱 배치(Schematic Placements) → 해당 배치의 설정(Configure) → 재료 목록(Material List)**으로 들어갑니다.",
+        "photo": "forum-litematica-materials",
+        "markers": [
+          {
+            "x": 1780,
+            "y": 520,
+            "label": "재료 목록"
+          }
+        ]
+      },
+      {
+        "title": "재료를 모으며 따라 짓기",
+        "caption": "재료 목록의 **새로고침 → 정보 HUD**를 켜 필요한 재료를 화면에 표시하세요. 친구와 같은 배치를 보려면 [설계도 공유 안내](/guide/shared-schematics/)로 이어집니다."
+      }
+    ],
+    "details": [
+      {
+        "title": "처음 알아 두면 편한 조작",
+        "body_markdown": "기본 도구는 **막대기**입니다. 도구를 바꾸려면 **M → 설정 메뉴 → 일반 → 도구 아이템**을 확인하세요.\n\n**M + C**는 설정, **M + G**는 표시 전환, **M + T**는 도구 켜기·끄기입니다. 버전이나 개인 키 설정에 따라 달라질 수 있으니 작동하지 않으면 Litematica의 **Hotkeys**에서 확인합니다. 명령어를 입력할 필요는 없습니다."
+      },
+      {
+        "title": "설계도나 재료가 보이지 않아요",
+        "body_markdown": "배치가 켜져 있는지와 표시 기능, 배치 좌표를 확인하세요. 큰 설계도의 건축 진행 상태가 이상하면 해당 구역의 청크가 로딩된 상태에서 재료 목록을 새로고침합니다.\n\n다른 인스턴스의 schematics 폴더에 넣으면 목록에 나오지 않습니다. 또한 새 게임 버전에서 만든 파일을 더 오래된 버전에서 열지 못할 수 있습니다. 배치·번역 버튼 이름은 포럼의 예전 화면과 조금 다를 수 있습니다.\n\n홀로그램이 깨지거나 안 보이면 **설정 → 비디오 설정 → 셰이더 팩 → 끄기**로 비교해 보세요. 제작자도 최신 버전의 셰이더 호환 문제를 안내하고 있습니다."
+      }
+    ],
+    "sources": [
+      {
+        "title": "자료실 · 라이트메티카 사용법 초급 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1475522809139695747"
+      },
+      {
+        "title": "Litematica 제작자 안내",
+        "url": "https://modrinth.com/mod/litematica"
+      },
+      {
+        "title": "MaLiLib",
+        "url": "https://modrinth.com/mod/malilib"
+      }
+    ]
+  },
+  {
+    "slug": "community-tools",
+    "title": "자료실에서 찾은 편리한 웹 도구",
+    "category": "생존과 생활",
+    "summary": "인챈트 순서, 로케이터 색상, 내 화면용 리소스팩을 버튼으로 찾아보세요.",
+    "order": 65,
+    "mods": [],
+    "icon_asset": "minecraft-spyglass.png",
+    "body_markdown": "서버 자료실에서 소개한 **외부 웹 도구**입니다. 필요한 것만 열어 사용하면 됩니다.",
+    "visual_steps": [
+      {
+        "title": "인챈트 합성 순서 계산",
+        "caption": "[인챈트 계산기 열기](https://minecraft-enchantment-order.vercel.app/) → **Choose your item**에서 장비 선택 → 원하는 인챈트 레벨 선택 → **Calculate Plan**을 누릅니다. 나온 순서를 보며 모루에서 합성하세요.",
+        "icon_asset": "minecraft-iron_pickaxe.png"
+      },
+      {
+        "title": "내 로케이터 색상 확인",
+        "caption": "[색상 찾기 열기](https://locator-color.loveroo.org/) → **Username/UUID** 입력칸에 마인크래프트 닉네임을 넣고 Enter를 누릅니다. 표시된 색상 코드를 확인하세요.",
+        "icon_asset": "minecraft-compass_16.png"
+      },
+      {
+        "title": "내 화면의 리소스팩 고르기",
+        "caption": "[Vanilla Tweaks 열기](https://vanillatweaks.net/picker/resource-packs/) → **Minecraft Version** 선택 → 원하는 항목 선택 → **Download**. 게임의 **설정 → 리소스 팩 → 팩 폴더 열기**에 ZIP을 넣고 사용 목록으로 옮깁니다.",
+        "icon_asset": "minecraft-painting.png"
+      }
+    ],
+    "details": [
+      {
+        "title": "계산 결과와 화면이 예상과 다를 때",
+        "body_markdown": "인챈트 계산기는 **이전에 모루를 사용한 횟수와 기존 인챈트**에 따라 결과가 달라질 수 있습니다. 화면에서 기존 상태를 맞춰 입력하고, 실제 모루에 표시되는 비용도 확인하세요.\n\n로케이터 도구는 **표시 색상**을 찾는 도구이며 상대 플레이어의 실제 위치를 찾아 주지는 않습니다.\n\nVanilla Tweaks는 내 화면의 리소스팩입니다. 서버에서 제공하는 아이템 모양이 이상해지면 **설정 → 리소스 팩**에서 추가한 팩을 잠시 끄고 비교해 보세요."
+      }
+    ],
+    "sources": [
+      {
+        "title": "자료실 · 인챈트 순서 계산기 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1507726121125412934"
+      },
+      {
+        "title": "자료실 · 로케이터 색상 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1536646279424249866"
+      },
+      {
+        "title": "자료실 · 바닐라트윅스 (Discord 로그인 필요)",
+        "url": "https://discord.com/channels/1399377654712373248/1507725943454695525"
+      },
+      {
+        "title": "Minecraft Enchantment Calculator",
+        "url": "https://minecraft-enchantment-order.vercel.app/"
+      },
+      {
+        "title": "Locator Color Finder",
+        "url": "https://locator-color.loveroo.org/"
+      },
+      {
+        "title": "Vanilla Tweaks Resource Packs",
+        "url": "https://vanillatweaks.net/picker/resource-packs/"
+      }
+    ]
+  }
+]

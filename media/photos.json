@@ -250,5 +250,897 @@
         "file": "recipe-search-1600.webp"
       }
     ]
+  },
+  "starter-inventory": {
+    "alt": "처음 받은 물품과 인벤토리",
+    "caption": "E 키로 가방을 열면 처음 받은 도구와 음식을 확인할 수 있습니다.",
+    "focus": [
+      536,
+      201,
+      528,
+      498
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "starter-inventory-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "starter-inventory-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "starter-inventory-1600.webp"
+      }
+    ]
+  },
+  "region-hub": {
+    "alt": "일반 플레이어의 구역 생활 메뉴",
+    "caption": "내 구역·엔드 상점·마을 관리·초대함을 한 화면에서 고릅니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-hub-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-hub-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-hub-1600.webp"
+      }
+    ]
+  },
+  "region-list": {
+    "alt": "내 구역 목록과 새 구역 버튼",
+    "caption": "처음 집터를 만들 때는 블레이즈 막대 모양의 새 구역 버튼을 누릅니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-list-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-list-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-list-1600.webp"
+      }
+    ]
+  },
+  "region-create": {
+    "alt": "두 모서리를 고르기 전 구역 생성 화면",
+    "caption": "첫 모서리는 좌클릭, 반대 모서리는 우클릭으로 지정합니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-create-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-create-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-create-1600.webp"
+      }
+    ]
+  },
+  "region-selected": {
+    "alt": "범위를 고른 뒤 다음 단계가 활성화된 구역 화면",
+    "caption": "두 모서리를 고르면 다음 단계에서 이름을 입력할 수 있습니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-selected-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-selected-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-selected-1600.webp"
+      }
+    ]
+  },
+  "region-name": {
+    "alt": "새 구역 이름을 입력하는 화면",
+    "caption": "위쪽 입력칸에 이름을 적고 오른쪽 이름표를 누릅니다.",
+    "focus": [
+      536,
+      201,
+      528,
+      216
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-name-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-name-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-name-1600.webp"
+      }
+    ]
+  },
+  "region-confirm": {
+    "alt": "우리집 구역 최종 생성 확인 화면",
+    "caption": "이름과 범위를 확인한 뒤 확정 버튼을 누릅니다.",
+    "focus": [
+      536,
+      198,
+      528,
+      216
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-confirm-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-confirm-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-confirm-1600.webp"
+      }
+    ]
+  },
+  "region-detail": {
+    "alt": "우리집 구역의 보호 규칙과 멤버 메뉴",
+    "caption": "보호 규칙과 멤버 설정은 구역별로 열어 확인합니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-detail-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-detail-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-detail-1600.webp"
+      }
+    ]
+  },
+  "region-flags": {
+    "alt": "블록 파괴·설치·상자 접근을 거부로 설정한 보호 규칙",
+    "caption": "사진의 빨강은 거부, 흰색은 상위 규칙을 따르는 기본값입니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-flags-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-flags-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-flags-1600.webp"
+      }
+    ]
+  },
+  "region-members": {
+    "alt": "멤버 초대와 마을원 허용 버튼",
+    "caption": "이름표 모양 버튼으로 멤버를 초대할 수 있습니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-members-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-members-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-members-1600.webp"
+      }
+    ]
+  },
+  "village-menu": {
+    "alt": "마을 만들기와 초대함이 있는 마을 관리 화면",
+    "caption": "마을을 만들거나 목록에서 참여할 마을을 찾아보세요.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "village-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "village-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "village-menu-1600.webp"
+      }
+    ]
+  },
+  "market-menu": {
+    "alt": "검색과 분류·정렬 버튼이 있는 상점 시세 화면",
+    "caption": "사진은 판매 기록이 없는 촬영장 예시입니다. 실제 서버에서는 거래 품목이 표시됩니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "market-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "market-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "market-menu-1600.webp"
+      }
+    ]
+  },
+  "recipe-index": {
+    "alt": "Polydex 아이템 목록과 하단 검색 버튼",
+    "caption": "아래쪽 나침반 버튼에서 아이템 이름을 검색합니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "recipe-index-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "recipe-index-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "recipe-index-1600.webp"
+      }
+    ]
+  },
+  "recipe-query": {
+    "alt": "토스트를 입력한 검색창과 여섯 가지 음식 검색 결과",
+    "caption": "위쪽 칸에 이름을 입력하면 아래에 검색 결과가 나타납니다.",
+    "focus": [
+      536,
+      201,
+      528,
+      498
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "recipe-query-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "recipe-query-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "recipe-query-1600.webp"
+      }
+    ]
+  },
+  "recipe-toast": {
+    "alt": "달걀과 토스트로 계란 토스트를 만드는 제작법 화면",
+    "caption": "계란 토스트의 제작법 예시입니다. 왼쪽은 재료, 오른쪽은 완성품입니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "recipe-toast-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "recipe-toast-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "recipe-toast-1600.webp"
+      }
+    ]
+  },
+  "voice-setup": {
+    "alt": "Simple Voice Chat 처음 설정 안내와 다음 버튼",
+    "caption": "처음 V 키를 누르면 장치와 말하기 방식을 고르는 안내가 시작됩니다.",
+    "focus": [
+      365,
+      25,
+      870,
+      830
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "voice-setup-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "voice-setup-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "voice-setup-1600.webp"
+      }
+    ]
+  },
+  "voice-menu": {
+    "alt": "음성 채팅의 설정·그룹·마이크·스피커 버튼",
+    "caption": "V 키로 여는 음성 채팅 메뉴입니다. 설정에서 장치와 말하기 키를 확인하세요.",
+    "focus": [
+      505,
+      335,
+      588,
+      228
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "voice-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "voice-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "voice-menu-1600.webp"
+      }
+    ]
+  },
+  "voice-settings": {
+    "alt": "말하기 방식과 단축키, 마이크·스피커 선택 화면",
+    "caption": "눌러서 말하기 키를 지정하고 마이크와 스피커를 선택하세요.",
+    "focus": [
+      430,
+      119,
+      744,
+      597
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "voice-settings-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "voice-settings-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "voice-settings-1600.webp"
+      }
+    ]
+  },
+  "cooking-pot": {
+    "alt": "채소를 조리하는 냄비의 재료·용기·완성품 칸",
+    "caption": "채소 수프를 조리하는 실제 화면입니다. 그릇은 아래쪽에, 완성품은 오른쪽 아래에 놓입니다.",
+    "focus": [
+      536,
+      198,
+      528,
+      216
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "cooking-pot-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "cooking-pot-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "cooking-pot-1600.webp"
+      }
+    ]
+  },
+  "keg-menu": {
+    "alt": "밀·씨앗·버섯과 물을 준비한 오크통 화면",
+    "caption": "맥주 재료를 준비한 예시입니다. 온도와 액체 조건을 함께 확인하세요.",
+    "focus": [
+      536,
+      198,
+      528,
+      216
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "keg-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "keg-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "keg-menu-1600.webp"
+      }
+    ]
+  },
+  "pause-menu": {
+    "alt": "Esc 게임 메뉴의 구역 관리 버튼",
+    "caption": "Esc 키를 누른 뒤 구역 관리 버튼을 선택하세요.",
+    "focus": [
+      490,
+      100,
+      620,
+      560
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "pause-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "pause-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "pause-menu-1600.webp"
+      }
+    ]
+  },
+  "region-shortcuts": {
+    "alt": "구역 관리 열기·구역 만들기·초대함·마을 관리 버튼",
+    "caption": "구역 관리 열기로 내 구역과 상점 메뉴에 들어갑니다.",
+    "focus": [
+      338,
+      170,
+      930,
+      306
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "region-shortcuts-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "region-shortcuts-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "region-shortcuts-1600.webp"
+      }
+    ]
+  },
+  "graves-list": {
+    "alt": "촬영 계정의 무덤 목록과 상자 아이콘",
+    "caption": "상자 아이콘에 마우스를 올려 장소를 확인한 뒤 클릭합니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "graves-list-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "graves-list-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "graves-list-1600.webp"
+      }
+    ]
+  },
+  "graves-detail": {
+    "alt": "무덤에 보관된 물품과 아래쪽 빠른 회수 버튼",
+    "caption": "아래쪽 네 번째 칸이 실제 물품 회수 버튼입니다. 맨 오른쪽은 목록으로 돌아갑니다.",
+    "focus": [
+      536,
+      144,
+      528,
+      330
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "graves-detail-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "graves-detail-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "graves-detail-1600.webp"
+      }
+    ]
+  },
+  "bot-controls": {
+    "alt": "가짜 플레이어의 동작 버튼과 소지품 화면",
+    "caption": "첫 줄은 동작, 둘째 줄은 손에 들 칸 선택, 그 아래는 봇의 소지품입니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "bot-controls-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "bot-controls-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "bot-controls-1600.webp"
+      }
+    ]
+  },
+  "bot-other": {
+    "alt": "봇 보조 조작 화면의 웅크리기·점프·종료 버튼",
+    "caption": "Shift를 누른 채 봇을 우클릭하면 여는 화면입니다. 맨 아래 오른쪽 Quit으로 종료합니다.",
+    "focus": [
+      536,
+      198,
+      528,
+      216
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "bot-other-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "bot-other-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "bot-other-1600.webp"
+      }
+    ]
+  },
+  "armor-editor": {
+    "alt": "부싯돌로 연 갑옷 거치대 편집 도구 단축바",
+    "caption": "편집 도구가 아래 단축바에 나타납니다. 숫자 키로 고른 뒤 우클릭하세요.",
+    "focus": [
+      500,
+      210,
+      610,
+      690
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "armor-editor-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "armor-editor-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "armor-editor-1600.webp"
+      }
+    ]
+  },
+  "armor-pose": {
+    "alt": "갑옷 거치대의 자세를 바꿀 신체 부위 선택 도구",
+    "caption": "막대기 Pose를 선택하면 부위별 편집으로 들어갑니다.",
+    "focus": [
+      500,
+      210,
+      610,
+      690
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "armor-pose-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "armor-pose-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "armor-pose-1600.webp"
+      }
+    ]
+  },
+  "head-categories": {
+    "alt": "Head Index의 장식 머리 분류 선택 화면",
+    "caption": "커스텀 머리를 들고 Shift + 우클릭하면 분류와 검색을 선택할 수 있습니다.",
+    "focus": [
+      536,
+      225,
+      528,
+      162
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "head-categories-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "head-categories-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "head-categories-1600.webp"
+      }
+    ]
+  },
+  "head-foods": {
+    "alt": "장식용 음식 머리를 고르는 목록",
+    "caption": "원하는 장식을 클릭하면 들고 있던 머리 한 개가 해당 외형으로 바뀝니다.",
+    "focus": [
+      536,
+      117,
+      528,
+      384
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "head-foods-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "head-foods-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "head-foods-1600.webp"
+      }
+    ]
+  },
+  "video-menu": {
+    "alt": "Dream Displays의 영상 검색·미리보기·화질·접근 권한 설정 화면",
+    "caption": "아래 입력칸에 검색어나 영상 주소를 넣고 재생할 항목을 고릅니다.",
+    "focus": [
+      0,
+      0,
+      1600,
+      900
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "video-menu-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "video-menu-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "video-menu-1600.webp"
+      }
+    ]
+  },
+  "web-map": {
+    "alt": "웹 지도에서 내려다본 서버 지형과 청록색 구역 경계",
+    "caption": "공개 웹 지도 화면입니다. 마우스로 이동하고 오른쪽 + / −로 확대·축소할 수 있습니다.",
+    "focus": [
+      0,
+      0,
+      1600,
+      900
+    ],
+    "kind": "website",
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "web-map-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "web-map-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "web-map-1600.webp"
+      }
+    ]
+  },
+  "advancements": {
+    "alt": "L 키로 연 BlazeandCave 발전 과제와 분야별 탭",
+    "caption": "각 아이콘에 마우스를 올리면 목표와 달성 조건을 읽을 수 있습니다.",
+    "focus": [
+      420,
+      150,
+      762,
+      510
+    ],
+    "variants": [
+      {
+        "width": 640,
+        "height": 360,
+        "file": "advancements-640.webp"
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "file": "advancements-1280.webp"
+      },
+      {
+        "width": 1600,
+        "height": 900,
+        "file": "advancements-1600.webp"
+      }
+    ]
   }
 }

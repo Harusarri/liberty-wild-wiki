@@ -37,6 +37,9 @@ for f,p in parsed.items():
         elif url.fragment and dest in parsed and unquote(url.fragment) not in parsed[dest].ids:errors.append(f'Missing anchor {value} in {f.relative_to(OUT)}')
 # Verify SVG symbols separately; HTMLParser does not read external sprites above.
 info=json.loads((OUT/'build-info.json').read_text())
+# A duplicate URL makes Cache.addAll reject the entire service-worker install.
+precache=json.loads(re.search(r'const PRECACHE=(\[.*?\]);',(OUT/'sw.js').read_text()).group(1))
+if len(precache)!=len(set(precache)):errors.append('Duplicate service-worker precache URL')
 sprite=(OUT/info['assets']['icons']).read_text()
 symbols=set(re.findall(r'id="([^"]+)"',sprite))
 for f,p in parsed.items():

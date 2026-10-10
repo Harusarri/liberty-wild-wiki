@@ -2,6 +2,10 @@
 
 운영 Fabric 서버의 플레이어 콘텐츠를 소개하는 가벼운 한국어 정적 위키입니다. 대상 주소는 `https://wiki.libertywild.org`입니다.
 
+저장소: [Harusarri/liberty-wild-wiki](https://github.com/Harusarri/liberty-wild-wiki) · [자동 배포 기록](https://github.com/Harusarri/liberty-wild-wiki/actions/workflows/pages.yml)
+
+운영 서버의 설치 모드 96개를 검토해 플레이어용 안내 33개를 작성했습니다. 사진 12장은 공허 촬영장에서 아침 시간과 Complementary Reimagined 셰이더로 직접 촬영했으며, 15개 안내 문서에 배치했습니다.
+
 ## 로컬 미리 보기
 
 Python 3.13 이상만 필요합니다. npm이나 패키지 설치, 외부 API 키는 필요하지 않습니다.
@@ -23,6 +27,19 @@ python3 -m http.server 8766 --bind 127.0.0.1 --directory dist
 5. DNS에 `wiki` CNAME 레코드를 `<GitHub 계정 또는 조직>.github.io`로 지정합니다. 저장소 이름이나 URL 경로는 넣지 않습니다. 기존 게임 접속용 A/SRV 레코드는 바꾸지 않습니다.
 6. GitHub의 DNS 확인과 인증서 발급이 끝나면 **Enforce HTTPS**를 켭니다.
 7. 실제 도메인에서 문서·검색·모바일 메뉴·오프라인 재열기를 확인합니다.
+
+현재 Cloudflare DNS 연결값은 다음과 같습니다.
+
+| 항목 | 값 |
+| --- | --- |
+| 도메인 | `libertywild.org` |
+| 유형 | `CNAME` |
+| 이름 | `wiki` |
+| 대상 | `harusarri.github.io` |
+| 프록시 상태 | DNS 전용 |
+| TTL | 자동 |
+
+문서를 수정한 뒤 `main`에 푸시하면 GitHub Actions가 빌드와 링크 검사를 수행하고 Pages에 배포합니다. 게임 서버나 별도의 웹 서버 프로세스를 재시작할 필요가 없습니다.
 
 [GitHub 공식 배포 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) · [사용자 지정 도메인 안내](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
